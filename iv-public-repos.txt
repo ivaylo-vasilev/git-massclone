@@ -7,3 +7,4 @@ https://github.com/ivaylo-vasilev/get.git
 https://github.com/ivaylo-vasilev/cryptx.git
 https://github.com/ivaylo-vasilev/checksum.git
 https://github.com/ivaylo-vasilev/pstool.git
+https://github.com/ivaylo-vasilev/pip-upgrade.git
