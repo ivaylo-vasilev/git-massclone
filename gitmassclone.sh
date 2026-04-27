@@ -19,13 +19,18 @@ while IFS= read -r line; do
     repos+=("$line")
 done < $reposurls
 
-for repo in "${repos[@]}"
-do
-    IFS="/" read -r -a urlparts <<< "$repo"
-    clonedir="${urlparts[-1]%.*}"
-    if [[ ! -d $clonedir ]]; then
-        git clone $repo
-    else
-        echo "$0: repository '$clonedir' already cloned"
-    fi
-done
+if command -v git >/dev/null; then
+    for repo in "${repos[@]}"
+    do
+        IFS="/" read -r -a urlparts <<< "$repo"
+        clonedir="${urlparts[-1]%.*}"
+        if [[ ! -d $clonedir ]]; then
+            git clone $repo
+        else
+            echo "$0: repository '$clonedir' already cloned"
+        fi
+    done
+else
+    echo "warning: git is not installed on system"
+    exit 3
+fi
