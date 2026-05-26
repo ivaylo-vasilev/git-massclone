@@ -9,3 +9,4 @@ https://github.com/ivaylo-vasilev/checksum.git
 https://github.com/ivaylo-vasilev/pstool.git
 https://github.com/ivaylo-vasilev/pip-upgrade.git
 https://github.com/ivaylo-vasilev/macinfo.git
+https://github.com/ivaylo-vasilev/websitemonitor.git
