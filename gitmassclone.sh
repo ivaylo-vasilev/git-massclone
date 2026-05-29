@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# Clone multiple github repositories using git
-# (c)Ivaylo Vasilev
+##############################
+# gitmassclone.sh #
+# =============== #
+# Clone multiple Github repositories with a single command in terminal.
+# Copyright (c)2025 Ivaylo Vasilev. Released under the MIT License; see LICENSE for details.
+# Author: Ivaylo Vasilev
+##############################
 
 if [[ "$#" -ne 1 ]]; then
     echo "usage: $0 <git-repos-urls.txt>"

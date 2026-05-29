@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+##############################
+# gitmassclone.py #
+# =============== #
+# Clone multiple Github repositories with a single command in terminal.
+# Copyright (c)2025 Ivaylo Vasilev. Released under the MIT License; see LICENSE for details.
+# Author: Ivaylo Vasilev
+##############################
+
 import argparse
 import shutil
 import subprocess
